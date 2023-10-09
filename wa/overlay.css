@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background-img.png'); 
+    background-size: cover;    
+    background-repeat: no-repeat; 
+    font-size: 100px;
+}
+
+.overlay-1{
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45%;
+    width: 100%;
+    background-image: url(overlay1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay-2{
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    width: 20%;
+    background-image: url(overlay2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
