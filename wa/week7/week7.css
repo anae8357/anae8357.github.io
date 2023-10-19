@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(33, 35, 35);
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: black;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:whitesmoke;
+}
+nav a:hover{
+    background-color: white;
+    color: black; 
+}
+
+
+img{
+    width: 30%;
+    margin: 1%;
+    
+}
+
+#red-ball{
+    background-color: rgb(247, 247, 247);
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    bottom:0;
+    animation: alternate;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 99%;
+    }
+}
