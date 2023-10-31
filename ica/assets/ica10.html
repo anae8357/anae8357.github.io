@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA10</title>
+    <style>
+
+        div{
+            display: flex;
+            flex-direction: row;
+        }
+
+        #button{
+            font-family: Helvetica, sans-serif;
+            border: 2px solid green;
+            width: 700px;
+            font-size: x-large;
+            justify-content: left;
+            align-items: left;
+            height: 100vh;
+            background-color: pink;
+        }
+
+        #brake{
+            font-family: Helvetica, sans-serif;
+            border: 2px solid green;
+            width: 700px;
+            font-size: x-large;
+            justify-content: right;
+            align-items: right;
+            height: 100vh;
+            background-color: pink;
+        }
+
+        #brake:hover{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <button id="button">THIS IS MY WEBSITE!</button>
+
+    <button id="brake">I DARE YOU TO PRESS ME!</button>
+</div>
+    <script>
+        const button = document.getElementById("button");
+        const brake = document.getElementById("brake");
+
+        button.addEventListener("mouseover",crazyTime);
+        button.addEventListener("mouseout",crazyTime);
+        brake.addEventListener('click',bigFont);
+
+        function crazyTime(){
+            const red = Math.floor(Math.random() * 256);
+            const green = Math.floor(Math.random() * 256);
+            const blue = Math.floor(Math.random() * 256);
+
+  
+            const randomColor = `rgb(${red}, ${green}, ${blue})`;
+
+
+            button.style.backgroundColor = randomColor;
+        }
+
+        function bigFont(){
+            const currentFontSize = window.getComputedStyle(brake).fontSize;
+
+            const fontSizeNum = parseFloat(currentFontSize);
+
+            const newFontSize = fontSizeNum * 2;
+
+            brake.style.fontSize = newFontSize + 'px';
+            
+        }
+        
+    </script>
+</body>
+</html>
