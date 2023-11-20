@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote City</title>
+    <script src="quote.js" defer></script>
+    <link rel="stylesheet" href="quote.css">
+</head>
+<body>
+    <div id="loading-bar" style="display: none;">Loading...</div>
+
+    <!--Button-->
+    <button id="fetch-quote-button">Gimme something DEEP.</button>
+
+    <div id="quote-container">
+        <!-- The quote and artist image will be displayed here -->
+    </div>
+
+    <script>
+        // Add an event listener to the button
+        document.getElementById('fetch-quote-button').addEventListener('click', function() {
+            fetchRandomQuote(); 
+        });
+    </script>
+</body>
+</html>

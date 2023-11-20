@@ -1,0 +1,27 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#quote-container{
+    text-align: center;
+    width: 30%;
+    height: auto;
+    position: static;
+    justify-content: center;
+}
+
+#fetch-quote-button{
+    width: 200px;
+    height: 40px; 
+    background: black;
+    color: white;
+    border: none; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
