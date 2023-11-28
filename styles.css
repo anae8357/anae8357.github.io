@@ -1,0 +1,66 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    margin-top: 0;
+}
+
+header {
+    background-color: #333; /* Feel free to adjust the color */
+}
+
+header span {
+    font-size: 1.5rem; /* Adjust the size as needed */
+}
+
+main {
+    padding: 2rem 0;
+}
+
+h1 {
+    color: #007bff; /* Adjust the color to fit your brand */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    color: #000000; /* Icons color */
+    font-size: 2rem; /* Icons size */
+    margin-right: 1.5rem; 
+    padding: 0.5rem;
+}
+
+nav a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+header img{
+    width: 200px;
+}
+img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Adjust the button color to fit your brand */
+    border-color: #007bff;
+}
+
+/* Additional media query adjustments for responsiveness */
+@media (max-width: 767px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 0.5rem;
+    }
+
+    .btn-primary {
+        display: block;
+        width: 100%;
+        max-width: 300px; /* Adjust button width as necessary */
+        margin: 0 auto;
+    }
+}
