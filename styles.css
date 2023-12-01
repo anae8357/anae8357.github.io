@@ -3,6 +3,7 @@ body {
     background-color: black;
     margin-top: 0;
     color: white;
+    
 }
 
 header {
@@ -26,8 +27,8 @@ h1 {
 nav a {
     color: #000000; /* Icons color */
     font-size: 2rem; /* Icons size */
-    margin-right: 1.5rem; 
-    padding: 0.5rem;
+    margin-right: 5rem; 
+    padding: 2rem;
     text-decoration: none;
 }
 
@@ -35,8 +36,13 @@ nav a:not(:last-child) {
     margin-right: 1rem;
 }
 
+.social-icon {
+    transition: opacity 0.5s ease-in-out;
+  }
+
 header img{
-    width: 200px;
+    width: 225px;
+    margin-left: 5rem;
 }
 img {
     max-width: 100%; /* Makes the image responsive */

@@ -19,13 +19,13 @@
         <img src="Logo-01.svg" alt="Logo">
         <nav>
             <a href="https://www.linkedin.com/in/anthony-a-231238131/" class="text-black me-2">
-                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-linkedin-in social-icon"></i>
             </a>
             <a href="https://www.instagram.com/anthonyreidallen" class="text-black me-2">
-                <i class="fab fa-instagram"></i>
+                <i class="fab fa-instagram social-icon"></i>
             </a>
             <a href="mailto:anthonyreidallen@gmail.com" class="text-black">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope social-icon"></i>
             </a>
         </nav>
     </header>
@@ -46,5 +46,32 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+  // Select all social icons
+  const socialIcons = document.querySelectorAll('.social-icon');
+
+  // Function to lower the opacity of non-hovered icons
+  function dimOtherIcons() {
+    socialIcons.forEach(icon => {
+      if (icon !== this) {
+        icon.style.opacity = '0.5';
+      }
+    });
+  }
+
+  // Function to reset the opacity when not hovering
+  function resetIconOpacity() {
+    socialIcons.forEach(icon => {
+      icon.style.opacity = '1';
+    });
+  }
+
+  // Add event listeners for mouseover and mouseout
+  socialIcons.forEach(icon => {
+    icon.addEventListener('mouseover', dimOtherIcons);
+    icon.addEventListener('mouseout', resetIconOpacity);
+  });
+</script>
+
 </body>
 </html>
