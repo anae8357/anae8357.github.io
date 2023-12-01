@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
     margin-top: 0;
+    color: white;
 }
 
 header {
@@ -17,7 +18,7 @@ main {
 }
 
 h1 {
-    color: #007bff; /* Adjust the color to fit your brand */
+    color: #4db8ff; /* Adjust the color to fit your brand */
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
@@ -27,6 +28,7 @@ nav a {
     font-size: 2rem; /* Icons size */
     margin-right: 1.5rem; 
     padding: 0.5rem;
+    text-decoration: none;
 }
 
 nav a:not(:last-child) {
@@ -42,8 +44,8 @@ img {
 }
 
 .btn-primary {
-    background-color: #007bff; /* Adjust the button color to fit your brand */
-    border-color: #007bff;
+    background-color: #4db8ff; /* Adjust the button color to fit your brand */
+    border-color: #4db8ff;
 }
 
 /* Additional media query adjustments for responsiveness */
