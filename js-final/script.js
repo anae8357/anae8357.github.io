@@ -173,4 +173,20 @@ function initializeDigits() {
     updateDigitButtons(); // Set initial button texts
 }
 
+function submitCraftedNumber() {
+    // Check if a number has been crafted
+    if (craftedNumber.length === 0) {
+        alert("You haven't crafted any number yet!");
+        return;
+    }
+
+    // Display the congratulatory message
+    alert(`Congratulations! You've crafted the number: ${craftedNumber}`);
+
+    // Clear the crafted number
+    craftedNumber = '';
+
+    // Update the display
+    updateDisplay();
+}
 
