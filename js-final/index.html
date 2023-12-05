@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resource Gathering Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <div id="miningArea" onclick="gatherResource('stone')">
+            <p>Mine Stone</p>
+        </div>
+        <div id="woodcuttingArea" onclick="gatherResource('wood')">
+            <p>Chop Wood</p>
+        </div>
+        <div id="status">
+            <p id="wood">Wood: 0</p>
+            <p id="stone">Stone: 0</p>
+            <p id="pickaxe">Pickaxe: Basic <span class="upgradeContainer"><button id="upgradePickaxe" onclick="upgradeTool('pickaxe')">Upgrade</button></span></p>
+            <p id="axe">Axe: Basic <span class="upgradeContainer"><button id="upgradeAxe" onclick="upgradeTool('axe')">Upgrade</button></span></p>
+        </div>
+        <div id="crafting">
+            <p>Craft a Digit:</p>
+            <div id="digits">
+                
+            </div>
+        </div>
+        <div id="phoneNumber">
+            <p id="craftedNumber">Crafted Number: </p>
+            <button id="submitNumber" onclick="submitCraftedNumber()">Submit Number</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

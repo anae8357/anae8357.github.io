@@ -1,0 +1,83 @@
+
+body{
+    color: white;
+    background-color: black;
+}
+
+#game {
+    text-align: center;
+    padding: 20px;
+    border: 10px;
+    border-color: black;
+    border-style: solid;
+    background-image: url('castlebg.jpeg');
+    background-size: cover;
+    background-position: 10%;
+}
+
+#miningArea, #woodcuttingArea {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: darkslategray;
+}
+
+#status, #crafting, #phoneNumber {
+    margin-top: 20px;
+}
+
+.digitButton {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid grey;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.digitButton:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+#loadingBar {
+    width: 0%;
+    height: 20px;
+    background-color: green;
+    transition: width 2s;
+}
+
+#loadingContainer {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.upgradeContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.upgradeContainer:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1;
+}
