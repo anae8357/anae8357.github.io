@@ -7,8 +7,17 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 </head>
 <body>
+    <a-assets> 
+       <a-asset-item id="alien1" src="alien1.obj" ></a-asset-item>
+       <a-asset-item id="ufo" src="ufo.obj" ></a-asset-item>
+    </a-assets>
     <a-scene>
         <a-sky src= 'UnrealWorld.jpg'></a-sky>
+        <a-obj-model src="#alien1" position="1 1 0" scale=".05 .05 .05" rotation="0 -90 0"></a-obj-model>
+        <a-obj-model src="#alien1" position="-1 1 0" scale=".05 .05 .05" rotation="0 90 0"></a-obj-model>
+        <a-obj-model src="#ufo" position="-1 2.5 0" scale=".05 .05 .05" rotation="0 90 0"></a-obj-model>
+
+
     </a-scene>
 </body>
 </html>
