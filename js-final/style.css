@@ -1,18 +1,18 @@
-
+html{
+    background-image: url('castlebg.jpeg');
+    background-size: 100%;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
 body{
-    color: white;
-    background-color: black;
+    color: #d8d8d8;
+    
 }
 
 #game {
     text-align: center;
     padding: 20px;
-    border: 10px;
-    border-color: black;
-    border-style: solid;
-    background-image: url('castlebg.jpeg');
-    background-size: cover;
     background-position: 10%;
+    font-size: large;
 }
 
 #miningArea, #woodcuttingArea {
@@ -21,7 +21,15 @@ body{
     margin: 10px;
     display: inline-block;
     cursor: pointer;
-    background-color: darkslategray;
+    color: black;
+}
+
+#miningArea {
+    background-image: url('stonetexture.jpeg');
+}
+
+#woodcuttingArea {
+    background-image: url('woodtexture.jpeg');
 }
 
 #status, #crafting, #phoneNumber {
@@ -35,6 +43,14 @@ body{
     cursor: pointer;
     display: inline-block;
     position: relative;
+    width: 8vw;
+    height: 5vw;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    background-image: url('stone.jpeg');
+    opacity: 90%;
+    background-size: 170%;
+    color: black;
 }
 
 .digitButton:hover::after {
@@ -48,6 +64,8 @@ body{
     padding: 5px;
     border-radius: 5px;
     white-space: nowrap;
+    font-size: large;
+
 }
 
 #loadingBar {
@@ -80,4 +98,16 @@ body{
     border-radius: 5px;
     white-space: nowrap;
     z-index: 1;
+}
+
+#submitNumber{
+    width: 12vw;
+    height: 5vw;
+    font-size: large;
+    background-color: darkgoldenrod;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+#crafting{
+   margin: 3%;
 }

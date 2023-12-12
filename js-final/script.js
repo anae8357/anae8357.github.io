@@ -50,8 +50,10 @@ function gatherResource(resourceType) {
 
     // Set the action as in progress
     if (resourceType === 'wood') {
+        document.getElementById('choppingSound').play();
         isWoodcuttingInProgress = true;
     } else {
+        document.getElementById('miningSound').play();
         isMiningInProgress = true;
     }
 
@@ -91,9 +93,11 @@ function upgradeTool(tool) {
 
         if (tool === 'pickaxe') {
             pickaxeLevel++;
+            document.getElementById('chingSound').play();
             updateToolDisplay('pickaxe', pickaxeLevel);
         } else {
             axeLevel++;
+            document.getElementById('chingSound').play();
             updateToolDisplay('axe', axeLevel);
         }
 
@@ -139,6 +143,7 @@ function craftDigit(digit) {
         wood -= cost.wood;
         stone -= cost.stone;
         craftedNumber += digit;
+        document.getElementById('chingSound').play();
 
         // Increase the cost for the next crafting of this digit
         digitCosts[digit].wood++;
@@ -156,7 +161,7 @@ function updateDigitButtons() {
     for (let button of digitButtons) {
         let digit = button.getAttribute('data-digit');
         let cost = digitCosts[digit];
-        button.innerText = `Craft ${digit}`;
+        button.innerText = `${digit}`;
         button.setAttribute('data-tooltip', `Costs - Wood: ${cost.wood}, Stone: ${cost.stone}`);
     }
 }
@@ -180,8 +185,11 @@ function submitCraftedNumber() {
         return;
     }
 
-    // Display the congratulatory message
+    // Display the final message
     alert(`Congratulations! You've crafted the number: ${craftedNumber}`);
+
+    //Play success sound
+    document.getElementById('successSound').play();
 
     // Clear the crafted number
     craftedNumber = '';
